@@ -17,7 +17,10 @@
                         font-weight: bolder;
                         text-align: center;
                     }
-
+                    span{
+                        color: #f97988;
+                        font-size: 1.5em;
+                    }
                     .product {
                         display: flex;
                         align-items: center;
@@ -50,6 +53,9 @@
                                     <xsl:value-of select="./image"/>
                                 </xsl:attribute>
                             </img>
+                            <span>
+                                <xsl:value-of select="./price"/>
+                            </span>
                             <p>
                                 <xsl:value-of select="./description"/>
                             </p>
